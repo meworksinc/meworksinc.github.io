@@ -12,7 +12,7 @@ body, canvas {
     transform: translate(-50%, -50%);
     font-size: 3em;
     font-weight: bold;
-    color: #0F0;
+    color: #4B0082;
     font-family: 'Matrix Code', monospace;
     text-align: center;
     z-index: 10;
@@ -29,3 +29,4 @@ body, canvas {
     text-align: center;
     z-index: 10;
 }
+
