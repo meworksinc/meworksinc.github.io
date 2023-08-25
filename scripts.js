@@ -14,7 +14,7 @@ for (let i = 0; i < columns; i++) {
 function drawMatrixRain() {
     ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-   ctx.fillStyle = "#0F0";
+    ctx.fillStyle = "#0F0";
     ctx.font = "15px monospace";
 
     for (let i = 0; i < drops.length; i++) {
@@ -29,3 +29,25 @@ function drawMatrixRain() {
 }
 
 setInterval(drawMatrixRain, 70);
+
+// ... existing JavaScript ...
+
+document.getElementById('copyEmailBtn').addEventListener('click', function() {
+    const email = "info@meworks.io";  // Replace with your email
+    const textarea = document.createElement('textarea');
+    textarea.textContent = email;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    
+    // Display the message
+    const messageElement = document.getElementById('copyMessage');
+    messageElement.textContent = `Copied email to your clipboard!`;
+    
+    // Optional: Hide the message after a few seconds
+    setTimeout(() => {
+        messageElement.textContent = '';
+    }, 3000);
+});
+
