@@ -14,7 +14,7 @@ for (let i = 0; i < columns; i++) {
 function drawMatrixRain() {
     ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "rgba(75, 0, 130, 1)";
+   ctx.fillStyle = "#0F0";
     ctx.font = "15px monospace";
 
     for (let i = 0; i < drops.length; i++) {
