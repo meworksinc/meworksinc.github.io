@@ -39,21 +39,27 @@ body, canvas {
     text-align: center;
 }
 
+/* ... existing CSS ... */
+
 #copyEmailBtn {
+    display: inline-block;  /* Make the link block-like */
     padding: 10px 15px;
-    background-color: #333333;  /* Indigo */
+    background-color: #333333;  /* Dark Gray */
     border: none;
     color: white;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
+    text-decoration: none;  /* Remove the underline */
 }
 
 #copyEmailBtn:hover {
-    background-color: #3a0061;  /* Darker Indigo */
+    background-color: #1a1a1a;  /* Even Darker Gray for hover effect */
 }
+
 #copyMessage {
     margin-top: 10px;
     color: gray;/* Adjust this value for more or less spacing */
 }
+
 
