@@ -50,4 +50,3 @@ document.getElementById('copyEmailBtn').addEventListener('click', function() {
         messageElement.textContent = '';
     }, 3000);
 });
-
